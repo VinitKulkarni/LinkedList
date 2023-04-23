@@ -1,7 +1,5 @@
 package com.bridgelabz.linkedlist;
 
-import com.bridgelabz.testingforlistlinked.MyLinkedList;
-
 public class LinkedListMainMethod {
     public static void main(String[] args) {
         MyLinkedList<Integer> linkedList1 = new MyLinkedList<>();
@@ -9,5 +7,13 @@ public class LinkedListMainMethod {
         linkedList1.push(70);
         linkedList1.push(30);
         linkedList1.push(56);
+        linkedList1.display();
+
+        MyLinkedList<Integer> linkedList2 = new MyLinkedList<>();
+        linkedList2.append(56);
+        linkedList2.append(30);
+        linkedList2.append(70);
+        linkedList2.display();
+
     }
 }
