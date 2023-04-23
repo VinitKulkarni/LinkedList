@@ -32,7 +32,9 @@ public class LinkedListMainMethod {
             System.out.println("Not found");
         }else{
             System.out.println(result + " found");
+            linkedList2.insertAfterValue(result,40);
         }
+        linkedList2.display();
 
         System.out.println("----------------------------------");
 

@@ -114,4 +114,17 @@ public class MyLinkedList<T> {
         }
         return -1;
     }
+    public void insertAfterValue(T findData, T insertData) {
+        Node<T> temp = head;
+        while(temp != null){
+            if(temp.data == findData)
+            {
+                Node<T> newNode = new Node<>(insertData);
+                Node<T> current = temp.next;
+                newNode.next = current;
+                temp.next = newNode;
+            }
+            temp = temp.next;
+        }
+    }
 }
