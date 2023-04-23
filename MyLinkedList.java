@@ -101,4 +101,17 @@ public class MyLinkedList<T> {
 
         return value;
     }
+    public int searchElement(T searchData){
+        Node<T> temp = head;
+        Integer value;
+        while(temp.next != null) {
+            if((temp.data).equals(searchData)){
+                value = (int)temp.data;
+                return value;
+            }else {
+                temp = temp.next;
+            }
+        }
+        return -1;
+    }
 }
