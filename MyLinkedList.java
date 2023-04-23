@@ -127,4 +127,22 @@ public class MyLinkedList<T> {
             temp = temp.next;
         }
     }
+    public T searchDelete(T searchData){
+        Node<T> temp = head;
+        Node prev = null;
+        Node curr = null;
+        T value = null;
+        while(temp.next != null) {
+            if(temp.data == searchData){
+                curr = temp.next;
+                prev.next = curr;
+                value = temp.data;
+                temp.next = null;
+            }else {
+                prev = temp;
+                temp = temp.next;
+            }
+        }
+        return value;
+    }
 }
