@@ -50,4 +50,37 @@ public class MyLinkedList<T> {
             tail = newNode;
         }
     }
+    void valuesOfPointers(){
+        if(calculateSize() > 0) {
+            System.out.println("head-->" + head.data + " & " + "tail-->" + tail.data);
+        }else{
+            System.out.println("Linked list is empty. Cannot display head & tail");
+        }
+    }
+
+    public T deleteFirst(){
+        T value = null;
+        Node<T> temp = head;
+        if(calculateSize() > 0) {
+            if (head == tail && head != null) {
+                value = head.data;
+                head = null;
+                tail = null;
+                System.out.println("Removed element is: "+value);
+            } else {
+                while (temp.next != tail && head != null) {
+                    temp = temp.next;
+                }
+                value = tail.data;
+                tail = temp;
+                tail.next = null;
+                System.out.println("Removed element is: "+value);
+            }
+        }
+        else{
+            System.out.println("linked list is empty. Cannot remove elements");
+        }
+        return value;
+    }
+
 }
