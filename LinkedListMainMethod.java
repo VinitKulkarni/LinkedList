@@ -36,6 +36,9 @@ public class LinkedListMainMethod {
         }
         linkedList2.display();
 
+        linkedList2.searchDelete(40);
+        linkedList2.display();
+
         System.out.println("----------------------------------");
 
         MyLinkedList<Integer> linkedList3 = new MyLinkedList<>();
