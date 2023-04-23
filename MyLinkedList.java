@@ -83,4 +83,22 @@ public class MyLinkedList<T> {
         return value;
     }
 
+    public T deleteLast(){
+        T value = null;
+        if(calculateSize() > 0){
+            if (head.next == null) {
+                value = head.data;
+                head = null;
+            } else {
+                Node temp = head.next;
+                value = head.data;
+                head = head.next;
+            }
+            System.out.println("Removed element is: "+value);
+        }else{
+            System.out.println("linked list is empty. cannot remove element");
+        }
+
+        return value;
+    }
 }
