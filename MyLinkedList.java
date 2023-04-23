@@ -94,7 +94,7 @@ public class MyLinkedList<T> {
                 value = head.data;
                 head = head.next;
             }
-            System.out.println("Removed element is: "+value);
+            System.out.println("Removed last element is: "+value);
         }else{
             System.out.println("linked list is empty. cannot remove element");
         }
