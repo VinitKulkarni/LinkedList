@@ -27,6 +27,13 @@ public class LinkedListMainMethod {
         linkedList2.display();
         linkedList2.valuesOfPointers();
 
+        Integer result = linkedList2.searchElement(30);
+        if(result == -1){
+            System.out.println("Not found");
+        }else{
+            System.out.println(result + " found");
+        }
+
         System.out.println("----------------------------------");
 
         MyLinkedList<Integer> linkedList3 = new MyLinkedList<>();
