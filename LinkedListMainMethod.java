@@ -9,6 +9,9 @@ public class LinkedListMainMethod {
         linkedList1.push(56);
         linkedList1.display();
         linkedList1.valuesOfPointers();
+        linkedList1.deleteFirst();
+        linkedList1.display();
+        linkedList1.valuesOfPointers();
 
         MyLinkedList<Integer> linkedList2 = new MyLinkedList<>();
         linkedList2.append(56);
