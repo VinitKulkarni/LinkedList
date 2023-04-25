@@ -48,5 +48,14 @@ public class LinkedListMainMethod {
         linkedList3.display();
         linkedList3.valuesOfPointers();
 
+        System.out.println("----------------------------------");
+
+        SortedLinkedList<Integer> sortedLinkedList = new SortedLinkedList<>();
+        sortedLinkedList.pushAndSort(56);
+        sortedLinkedList.pushAndSort(30);
+        sortedLinkedList.pushAndSort(40);
+        sortedLinkedList.pushAndSort(70);
+
+        sortedLinkedList.display();
     }
 }
